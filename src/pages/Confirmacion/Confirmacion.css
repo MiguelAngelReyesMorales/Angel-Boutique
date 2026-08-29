@@ -1,0 +1,135 @@
+/* PÁGINA DE CONFIRMACIÓN */
+
+.confirmacion-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f5f2;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENIDO */
+
+.confirmacion-page {
+  justify-content: space-between;
+}
+
+.confirmacion-card {
+  width: 100%;
+  max-width: 650px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ICONO */
+
+.confirmacion-icono {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* TITULO */
+
+.confirmacion-card h1 {
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+  font-size: 34px;
+}
+
+/* MENSAJES */
+
+.confirmacion-mensaje {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.confirmacion-card p {
+  color: #666666;
+  font-size: 16px;
+}
+
+/* BOTONES */
+
+.confirmacion-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.confirmacion-acciones a {
+  text-decoration: none;
+}
+
+.confirmacion-acciones button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* BOTÓN INICIO */
+
+.inicio-btn {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.inicio-btn:hover {
+  background-color: #555555;
+}
+
+/* BOTÓN SEGUIR COMPRANDO */
+
+.comprar-btn {
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+.comprar-btn:hover {
+  background-color: #dddddd;
+}
+
+/* PIE DE PÁGINA */
+
+.confirmacion-footer {
+  padding: 25px 50px;
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+  color: #666666;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .confirmacion-card {
+    margin: 40px 15px;
+    padding: 40px 20px;
+  }
+
+  .confirmacion-card h1 {
+    font-size: 28px;
+  }
+
+  .confirmacion-acciones {
+    flex-direction: column;
+  }
+
+  .confirmacion-acciones button {
+    width: 100%;
+  }
+
+  .confirmacion-footer {
+    padding: 20px;
+  }
+}

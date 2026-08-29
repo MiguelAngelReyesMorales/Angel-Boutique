@@ -1,0 +1,173 @@
+/* Página de detalle del producto */
+
+.producto-detalle {
+  min-height: 100vh;
+  padding: 60px 30px;
+  background-color: #f8f5f2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BOTÓN REGRESAR */
+
+.regresar-btn {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #333333;
+  color: #ffffff;
+
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.regresar-btn:hover {
+  background-color: #555555;
+}
+
+/* TARJETA */
+
+.producto-detalle-card {
+  width: 100%;
+  max-width: 1000px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 45px;
+  padding: 35px;
+
+  background-color: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+  box-sizing: border-box;
+}
+
+/* IMAGEN */
+
+.producto-detalle-imagen {
+  width: 48%;
+  min-height: 450px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f3d8e5;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+.producto-detalle-imagen img {
+  width: 100%;
+  height: 450px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* INFORMACIÓN */
+
+.producto-detalle-info {
+  flex: 1;
+}
+
+.producto-detalle-info h1 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, serif;
+  font-size: 40px;
+}
+
+.producto-precio {
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.producto-detalle-info > p:not(.producto-precio) {
+  margin-bottom: 30px;
+
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* BOTÓN AGREGAR AL CARRITO */
+
+.producto-detalle-info button {
+  width: 100%;
+
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #333333;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.producto-detalle-info button:hover {
+  background-color: #555555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .producto-detalle {
+    padding: 30px 15px;
+  }
+
+  .regresar-btn {
+    align-self: flex-start;
+  }
+
+  .producto-detalle-card {
+    flex-direction: column;
+
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .producto-detalle-imagen {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .producto-detalle-imagen img {
+    height: 350px;
+  }
+
+  .producto-detalle-info {
+    width: 100%;
+  }
+
+  .producto-detalle-info h1 {
+    font-size: 32px;
+  }
+}

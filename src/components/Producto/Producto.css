@@ -1,0 +1,38 @@
+/* Tarjeta reutilizable de producto */
+
+.producto {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f3d8e5;
+}
+
+.producto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.producto button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.producto button:hover {
+  background-color: #555555;
+}

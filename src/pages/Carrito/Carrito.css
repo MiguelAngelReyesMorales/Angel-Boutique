@@ -1,0 +1,321 @@
+/* Página del carrito de Ángel Boutique */
+
+.carrito-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f5f2;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.carrito-header {
+  padding: 25px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.carrito-header h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+/* CONTENIDO */
+
+.carrito-contenido {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+/* CARRITO VACÍO */
+
+.carrito-vacio {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.carrito-icono {
+  margin-bottom: 20px;
+  font-size: 55px;
+}
+
+.carrito-vacio h2 {
+  margin-bottom: 12px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.carrito-vacio p {
+  margin-bottom: 25px;
+  color: #666666;
+}
+
+.carrito-vacio button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.carrito-vacio button:hover {
+  background-color: #555555;
+}
+
+/* LISTA DE PRODUCTOS */
+
+.carrito-lista {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PRODUCTO */
+
+.carrito-producto {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* IMAGEN DEL PRODUCTO */
+
+.carrito-producto img {
+  width: 220px;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f3d8e5;
+  flex-shrink: 0;
+}
+
+/* INFORMACIÓN */
+
+.carrito-producto-info {
+  flex: 1;
+}
+
+.carrito-producto-info h2 {
+  margin: 0 0 15px 0;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.carrito-producto-info p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.carrito-producto-info p:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carrito-producto-info p:nth-of-type(2) {
+  color: #666666;
+}
+
+/* BOTÓN ELIMINAR */
+
+.carrito-producto-info button {
+  margin-top: 15px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.carrito-producto-info button:hover {
+  background-color: #555555;
+}
+
+/* BOTÓN VACIAR CARRITO */
+
+.vaciar-carrito-btn {
+  align-self: flex-end;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.vaciar-carrito-btn:hover {
+  background-color: #555555;
+}
+
+/* PIE DE PÁGINA */
+
+.carrito-footer {
+  padding: 25px 50px;
+  background-color: #ffffff;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+  color: #666666;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .carrito-header {
+    padding: 20px;
+  }
+
+  .carrito-contenido {
+    padding: 30px 15px;
+  }
+
+  .carrito-producto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carrito-producto img {
+    width: 260px;
+    height: 300px;
+  }
+
+  .carrito-producto-info {
+    width: 100%;
+  }
+
+  .vaciar-carrito-btn {
+    align-self: center;
+  }
+
+  .carrito-footer {
+    padding: 20px;
+  }
+}
+/* CONTROL DE CANTIDAD */
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.cantidad-btn {
+  width: 32px;
+  height: 32px;
+
+  padding: 0 !important;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #333333;
+  color: #ffffff;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cantidad-btn:hover {
+  background-color: #555555;
+}
+
+.cantidad-numero {
+  min-width: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* RESUMEN DE COMPRA */
+
+.carrito-resumen {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 25px;
+
+  background-color: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.carrito-resumen h2 {
+  margin: 0 0 15px;
+
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.carrito-total {
+  margin: 0 0 20px;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carrito-acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.pagar-btn {
+  padding: 13px 30px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #333333;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.pagar-btn:hover {
+  background-color: #555555;
+}
+
+@media (max-width: 600px) {
+
+  .cantidad-control {
+    justify-content: center;
+  }
+
+  .carrito-acciones {
+    flex-direction: column;
+  }
+
+  .vaciar-carrito-btn,
+  .pagar-btn {
+    width: 100%;
+  }
+}
