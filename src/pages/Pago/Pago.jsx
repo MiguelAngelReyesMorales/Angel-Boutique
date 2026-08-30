@@ -88,12 +88,16 @@ function Pago() {
                 Teléfono
               </label>
 
-              <input
-                type="tel"
-                placeholder="Ingresa tu teléfono"
-                value={telefono}
-                onChange={(e) => setTelefono(e.target.value)}
-              />
+             <input
+              type="tel"
+              placeholder="Ingresa tu teléfono"
+              value={telefono}
+              onChange={(e) =>
+                setTelefono(e.target.value.replace(/\D/g, ''))
+              }
+              inputMode="numeric"
+              maxLength="10"
+             />
             </div>
 
             <div className="campo">
