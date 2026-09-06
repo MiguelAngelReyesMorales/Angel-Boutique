@@ -6,10 +6,12 @@ import ProductoDetalle from './pages/Producto/ProductoDetalle'
 import Pago from './pages/Pago/Pago'
 import Confirmacion from './pages/Confirmacion/Confirmacion'
 
+// Componente principal que administra la navegación de la aplicación
 function App() {
   return (
     <BrowserRouter>
-
+    
+    {/* Rutas principales del proyecto */}
       <Routes>
 
         <Route

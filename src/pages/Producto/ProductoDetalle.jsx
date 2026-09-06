@@ -6,6 +6,7 @@ import blusa from '../../assets/blusa.jpg'
 import jeans from '../../assets/jeans.jpg'
 import bolso from '../../assets/bolso.jpg'
 
+// Muestra la información del producto seleccionado y permite agregarlo al carrito
 function ProductoDetalle() {
   const { nombre } = useParams()
 
@@ -45,6 +46,7 @@ function ProductoDetalle() {
     return <h1>Producto no encontrado</h1>
   }
 
+  // Agrega el producto al carrito y actualiza la información almacenada en localStorage
   const agregarAlCarrito = () => {
     const carritoGuardado = localStorage.getItem('carrito')
 

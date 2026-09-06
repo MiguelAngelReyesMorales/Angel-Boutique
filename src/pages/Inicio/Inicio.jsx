@@ -12,6 +12,7 @@ import bolso from '../../assets/bolso.jpg'
 function Inicio() {
 
   const [busqueda, setBusqueda] = useState('')
+  // Almacena el texto ingresado por el usuario para filtrar los productos
 
   const productos = [
     {
@@ -32,6 +33,7 @@ function Inicio() {
     },
   ]
 
+  // Filtra los productos de acuerdo con el texto ingresado en el buscador
   const productosFiltrados = productos.filter((producto) =>
     producto.nombre
       .toLowerCase()

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Confirmacion.css'
 
+// Muestra la confirmación de la compra y las opciones para continuar
 function Confirmacion() {
   return (
     <main className="confirmacion-page">
@@ -23,6 +24,7 @@ function Confirmacion() {
           Tu pedido ha sido confirmado correctamente.
         </p>
 
+      {/* Acciones para volver al inicio o continuar con la compra */}
         <div className="confirmacion-acciones">
 
           <Link to="/">

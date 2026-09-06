@@ -3,9 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import './Carrito.css'
 
+  // Gestiona los productos agregados, cantidades, eliminación y total de compra
 function Carrito() {
   const navigate = useNavigate()
 
+  // Recupera los productos almacenados previamente en localStorage
   const [carrito, setCarrito] = useState(() => {
     const carritoGuardado = localStorage.getItem('carrito')
 
@@ -66,6 +68,7 @@ function Carrito() {
     )
   }
 
+  // Calcula el valor total de todos los productos del carrito
   const total = carrito.reduce((suma, producto) => {
     return suma + (
       calcularPrecio(producto.precio) *
@@ -73,6 +76,7 @@ function Carrito() {
     )
   }, 0)
 
+  // Dirige al usuario a la página de pago
   const pagar = () => {
     navigate('/pago')
   }

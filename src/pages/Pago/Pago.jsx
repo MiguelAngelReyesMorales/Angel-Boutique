@@ -2,14 +2,17 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './Pago.css'
 
+// Gestiona los datos de entrega y la confirmación del pedido
 function Pago() {
   const navigate = useNavigate()
 
+// Almacena los datos ingresados por el usuario para realizar el pedido
   const [nombre, setNombre] = useState('')
   const [correo, setCorreo] = useState('')
   const [telefono, setTelefono] = useState('')
   const [direccion, setDireccion] = useState('')
 
+  // Recupera los productos seleccionados para mostrar el resumen de compra
   const carritoGuardado = localStorage.getItem('carrito')
 
   const carrito = carritoGuardado
@@ -22,6 +25,7 @@ function Pago() {
     )
   }
 
+  // Calcula el total de la compra según los productos y sus cantidades
   const total = carrito.reduce((suma, producto) => {
     return suma + (
       calcularPrecio(producto.precio) *
@@ -29,6 +33,7 @@ function Pago() {
     )
   }, 0)
 
+  // Valida los datos, vacía el carrito y dirige al usuario a la confirmación
   const confirmarPedido = (e) => {
     e.preventDefault()
 
