@@ -1,12 +1,22 @@
+import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
 function Login() {
+  // Permite controlar la navegación después de iniciar sesión
+  const navigate = useNavigate()
+
+   // Evita recargar la página y dirige al usuario al inicio
+  const iniciarSesion = (e) => {
+    e.preventDefault()
+    navigate('/inicio')
+  }
+
   return (
     <main className="login-container">
       <section className="login-card">
         <h1>Ángel Boutique</h1>
 
-        <form>
+        <form onSubmit={iniciarSesion}>
           <div className="form-group">
             <label htmlFor="email">Correo electrónico</label>
             <input

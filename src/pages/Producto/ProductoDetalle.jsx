@@ -78,7 +78,7 @@ function ProductoDetalle() {
   return (
     <main className="producto-detalle">
 
-      <Link to="/">
+      <Link to="/inicio">
         <button className="regresar-btn">
           ← Regresar
         </button>

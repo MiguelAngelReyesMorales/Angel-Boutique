@@ -63,7 +63,7 @@ function Inicio() {
 
         <div className="acciones">
 
-          <Link to="/login">
+          <Link to="/perfil">
             <button>👤 Perfil</button>
           </Link>
 
@@ -165,7 +165,9 @@ function Inicio() {
 
         <span>© 2026 Ángel Boutique</span>
 
-        <button>↩ Regresar</button>
+      <Link to="/">
+      <button>↩ Regresar</button>
+      </Link>
 
       </footer>
 

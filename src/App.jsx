@@ -5,46 +5,57 @@ import Carrito from './pages/Carrito/Carrito'
 import ProductoDetalle from './pages/Producto/ProductoDetalle'
 import Pago from './pages/Pago/Pago'
 import Confirmacion from './pages/Confirmacion/Confirmacion'
+import Perfil from './pages/Perfil/Perfil'
 
 // Componente principal que administra la navegación de la aplicación
 function App() {
   return (
     <BrowserRouter>
     
-    {/* Rutas principales del proyecto */}
-      <Routes>
+{/* Rutas principales del proyecto */}
+<Routes>
 
-        <Route
-          path="/"
-          element={<Inicio />}
-        />
+  <Route
+    path="/"
+    element={<Login />}
+  />
 
-        <Route
-          path="/login"
-          element={<Login />}
-        />
+  <Route
+    path="/inicio"
+    element={<Inicio />}
+  />
 
-        <Route
-          path="/carrito"
-          element={<Carrito />}
-        />
+  <Route
+    path="/login"
+    element={<Login />}
+  />
 
-        <Route
-          path="/producto/:nombre"
-          element={<ProductoDetalle />}
-        />
+  <Route
+    path="/carrito"
+    element={<Carrito />}
+  />
 
-        <Route
-          path="/pago"
-          element={<Pago />}
-        />
+  <Route
+    path="/producto/:nombre"
+    element={<ProductoDetalle />}
+  />
 
-        <Route
-          path="/confirmacion"
-          element={<Confirmacion />}
-        />
+  <Route
+    path="/pago"
+    element={<Pago />}
+  />
 
-      </Routes>
+  <Route
+    path="/confirmacion"
+    element={<Confirmacion />}
+  />
+  
+  <Route
+    path="/perfil"
+    element={<Perfil />}
+  />
+
+</Routes>
 
     </BrowserRouter>
   )

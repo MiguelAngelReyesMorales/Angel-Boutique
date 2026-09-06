@@ -27,7 +27,7 @@ function Confirmacion() {
       {/* Acciones para volver al inicio o continuar con la compra */}
         <div className="confirmacion-acciones">
 
-          <Link to="/">
+          <Link to="/inicio">
             <button className="inicio-btn">
               🏠 Volver al inicio
             </button>

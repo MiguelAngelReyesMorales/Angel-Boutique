@@ -106,7 +106,7 @@ function Carrito() {
               Agrega productos para comenzar tu compra.
             </p>
 
-            <Link to="/">
+            <Link to="/inicio">
               <button>
                 ← Continuar comprando
               </button>
